@@ -10,6 +10,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.testng.*;
+import org.testng.annotations.Test;
 import org.testng.xml.XmlSuite;
 
 import java.io.File;
