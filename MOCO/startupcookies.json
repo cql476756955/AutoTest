@@ -6,68 +6,10 @@
       "method": "get"
     },
     "response": {
-      "text": "cookies",
-      "headers":{
-        "Content-Type":"text/html;charset=gbk"
-      },
+      "text": "cookies"，
       "cookies": {
         "login": "true"
-      }
-    }
-  },
-  {
-    "description":"这是一个带cookies信息的post请求",
-    "request":{
-      "uri":"/post/with/cookies",
-      "method":"post",
-      "cookies":{
-        "login":"true"
       },
-      "json":{
-        "name":"huhansan",
-        "age":"18"
-      }
-    },
-    "response":{
-      "status":200,
-      "json":{
-        "huhansan":"success",
-        "status":"1"
-      }
-    }
-  },{
-  "description":"重定向到百度",
-  "request":{
-    "uri":"/redirect"
-  },
-  "redirectTo":"http://www.baidu.com",
-  "response":{
-    "text":"重定向成功啦",
-    "headers":{
-      "Content-Type":"text/html;charset=gbk"
-    }
-  }
-},
-  {
-    "description":"重定向到一个自己的网页上",
-    "request":{
-      "uri":"/redirect/topath"
-    },
-    "redirectTo":"/redirect/new",
-    "response":{
-      "text":"重定向成功啦",
-      "headers":{
-        "Content-Type":"text/html;charset=gbk"
-      }
-    }
-  },
-  {
-    "description":"这是被重定向到的请求",
-    "request":{
-      "uri":"/redirect/new"
-    },
-    "response":{
-      "text":"重定向成功啦",
       "headers":{
         "Content-Type":"text/html;charset=gbk"
       }
