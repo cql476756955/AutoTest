@@ -56,6 +56,17 @@ public class getCookie {
         return mapList;
     }
 
+    @RequestMapping(value = "/post/cookie",method = RequestMethod.GET)
+    public String postCookie(HttpServletResponse response,@RequestParam String name,@RequestParam String password){
+            if(name.equals("xiaosan") && password.equals("12346")){
+                Cookie cookie = new Cookie("login","too");
+                response.addCookie(cookie);
+                return "登录成功";
+            }
+
+            return "用户名或者密码错误";
+    }
+
 }
 
 
